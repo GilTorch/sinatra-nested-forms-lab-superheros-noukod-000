@@ -1,4 +1,7 @@
 <h1> Team Name: <%=@team.name%> </h1>
 <p>Team Motto: <%=@team.motto%></p>
-
-
+<% @heroes.each do |hero| %>
+  <% hero.name %> 
+  <% hero.power %>
+  <% hero.biography%>
+<% end %>
