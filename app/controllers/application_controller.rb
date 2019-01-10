@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_all './app'
 
 class App < Sinatra::Base
 
@@ -6,6 +7,11 @@ class App < Sinatra::Base
 
     get '/' do
       erb :super_hero
+    end
+
+    post '/team' do
+      @team=Team. 
+      erb :team
     end
 
 end
